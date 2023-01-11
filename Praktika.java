@@ -1,19 +1,16 @@
 package org.example;
-import java.util.Scanner;
+
 public class Praktika {
     public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
-    System.out.print("Введите 1 число: ");
-    float num1 = scan.nextFloat();
+        int[] intArray = {15, 4, 44, 55, 84, 490, 2};
 
-        System.out.print("Введите 2 число: ");
-        float num2 = scan.nextFloat();
+        int maxNum = intArray[0];
 
-        if (num1>num2) {
-            System.out.println(num1);
+        for (int j : intArray) {
+            if (j > maxNum)
+                maxNum = j;
         }
-        else {
-            System.out.println(num2);
-        }
+
+        System.out.println("Максимальное число: = " + maxNum);
     }
 }
