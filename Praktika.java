@@ -15,14 +15,14 @@ public class Praktika {
         for (int i=0; i<size; i++) {
             intArray.add(input.nextInt()); // заполняем массив элементами, введенными с клавиатуры
         }
-        int maxNum;
-        maxNum = intArray.get(0);
+        int minNum;
+        minNum = intArray.get(0);
 
         for (int j : intArray) {
-            if (j > maxNum)
-                maxNum = j;
+            if (j > minNum)
+                minNum = j;
         }
 
-        System.out.println("Максимальное число: = " + maxNum);
+        System.out.println("Максимальное число: = " + minNum);
     }
 }
